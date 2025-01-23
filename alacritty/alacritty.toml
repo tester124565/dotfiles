@@ -1,0 +1,19 @@
+[window]
+
+opacity = 0.6
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Buttonless"
+decorations_theme_variant = "Light" # "Dark"
+
+[font]
+
+normal.family = "Hack Nerd Font"
+bold.family = "Hack Nerd Font"
+italic.family = "Hack Nerd Font"
+bold_italic.family = "Hack Nerd Font"
+
+size = 14.5
+
