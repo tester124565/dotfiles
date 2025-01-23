@@ -1,0 +1,23 @@
+# shellcheck disable=SC2148
+# labwc autostart file
+
+# wallpapers
+swaybg -i "/home/linux/Downloads/wallpaper/astronaut-jellyfish.jpg" -m fill >/dev/null 2>&1 &
+
+# Display configuration
+wlr-randr --output HDMI-A-1 --mode 1600x900
+
+#kanshi >/dev/null 2>&1 &
+
+# panel launching such as yambar or waybar
+waybar
+
+# notifications thingy
+mako >/dev/null 2>&1 &
+
+# idle thingy
+swayidle -w \
+	timeout 300 'swaylock -f -c 000000' \
+	timeout 600 'wlopm --off \*' \
+	resume 'wlopm --on \*' \
+	before-sleep 'swaylock -f -c 000000' >/dev/null 2>&1 &
